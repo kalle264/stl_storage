@@ -1,0 +1,18 @@
+services:
+  stl_storage:
+    build: .
+    volumes:
+      - ./:/app
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Amsterdam
+
+    hostname: docker
+    cap_add:
+      - NET_BIND_SERVICE
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "100"
