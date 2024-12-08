@@ -16,3 +16,4 @@ fleet/
 .ruff_cache/
 .venv/
 .DS_Store
+data/
