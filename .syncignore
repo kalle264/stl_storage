@@ -1,16 +1,9 @@
 __pycache__/
-*.swp
 .env
-gphoto/resumable_uploads.db
-gphoto/uploads.db
-gphoto/development@zauberzeug.com
 .pytest_cache/
 .vscode/
 .github/
 tests/
-config.hjson
-backups/
-fleet/
 .git/
 .mypy_cache/
 .ruff_cache/
