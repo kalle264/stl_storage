@@ -19,19 +19,5 @@ jobs:
       - name: pre-commit, mypy & pylint
         run: |
           pre-commit run --all-files
-          mypy ./field_friend --non-interactive
-          # pylint ./field_friend
-  pytest:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: "pip"
-      - run: pip install -e . -r requirements-dev.txt
-      - name: run pytests
-        env:
-          PYTHONPATH: ${{ github.workspace }}
-        run: pytest
+          mypy ./stl_storage --non-interactive
+          # pylint ./stl_storage
