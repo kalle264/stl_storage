@@ -4,10 +4,11 @@ import os
 from dotenv import load_dotenv
 from nicegui import app, ui
 
-from stl_storage import ModelDatabase
+from stl_storage import ModelDatabase, configure_logging
 from stl_storage.main_page import MainPage as main_page
 from stl_storage.model_page import ModelPage as model_page
 
+logger = configure_logging()
 load_dotenv('.env')
 data_dir = os.getenv('DATA_DIR')
 assert data_dir is not None, 'DATA_DIR is not set'
