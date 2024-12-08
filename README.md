@@ -1,6 +1,6 @@
 # STL Storage
 
-This project aims to be a simple tool for managing 3d printing libraries, like [printables](https://www.printables.com/) or [thingiverse](https://www.thingiverse.com/).
+This project aims to be a simple and selfhosted tool for managing 3d printing files, like [printables](https://www.printables.com/) or [thingiverse](https://www.thingiverse.com/), but for personal libraries
 
 ## Alternatives
 
