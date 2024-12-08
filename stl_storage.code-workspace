@@ -3,6 +3,9 @@
     {
       "path": "."
     }
+    {
+      "path": "../nicegui"
+    }
   ],
   "settings": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
